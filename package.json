@@ -1,0 +1,35 @@
+{
+  "name": "sonarqube-verify",
+  "version": "0.0.1",
+  "description": "Launch SonarQube analysis and add a verification on the status of the Quality Gate after the report has ended",
+  "main": "dist/index.js",
+  "files": [
+    "lib"
+  ],
+  "bin": {
+    "sonarqube-verify": "lib/cli.js"
+  },
+  "scripts": {
+    "test": "echo 'no test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkxNMDI5/sonarqube-verify.git"
+  },
+  "keywords": [
+    "sonarqube",
+    "quality",
+    "checker"
+  ],
+  "author": "SkxNMDI5",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SkxNMDI5/sonarqube-verify/issues"
+  },
+  "homepage": "https://github.com/SkxNMDI5/sonarqube-verify#readme",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "slug": "^0.9.1",
+    "sonarqube-scanner": "^2.0.2"
+  }
+}

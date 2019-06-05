@@ -21,7 +21,7 @@
     "quality",
     "checker"
   ],
-  "author": "SkxNMDI5",
+  "author": "jlamande",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SkxNMDI5/sonarqube-verify/issues"
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/SkxNMDI5/sonarqube-verify#readme",
   "dependencies": {
     "debug": "^3.1.0",
-    "slug": "^0.9.1",
-    "sonarqube-scanner": "^2.0.2"
+    "slug": "^1.1.0",
+    "sonarqube-scanner": "^2.4.1"
   }
 }

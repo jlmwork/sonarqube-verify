@@ -1,6 +1,6 @@
 {
   "name": "sonarqube-verify",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Launch SonarQube analysis and add a verification on the status of the Quality Gate after the report has ended",
   "main": "dist/index.js",
   "files": [
@@ -10,11 +10,12 @@
     "sonarqube-verify": "lib/cli.js"
   },
   "scripts": {
-    "test": "echo 'no test'"
+    "test": "echo 'no test'",
+    "release": "npm version patch -m 'Release Patch' && git push --tags && git push"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SkxNMDI5/sonarqube-verify.git"
+    "url": "git+https://github.com/jlmwork/sonarqube-verify.git"
   },
   "keywords": [
     "sonarqube",
@@ -24,12 +25,11 @@
   "author": "jlamande",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SkxNMDI5/sonarqube-verify/issues"
+    "url": "https://github.com/jlmwork/sonarqube-verify/issues"
   },
-  "homepage": "https://github.com/SkxNMDI5/sonarqube-verify#readme",
+  "homepage": "https://github.com/jlmwork/sonarqube-verify#readme",
   "dependencies": {
     "debug": "^3.1.0",
-    "slug": "^1.1.0",
     "sonarqube-scanner": "^2.4.1"
   }
 }

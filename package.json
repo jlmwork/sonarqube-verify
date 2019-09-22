@@ -1,6 +1,6 @@
 {
   "name": "sonarqube-verify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Launch SonarQube analysis and add a verification on the status of the Quality Gate after the report has ended",
   "main": "dist/index.js",
   "files": [

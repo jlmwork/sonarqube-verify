@@ -34,6 +34,18 @@ This module allows you to use the following environment variables to provide run
  - ```SONAR_PASSWORD``` : (in case you are not using authentication token but you should)
  - ```SONAR_SKIP``` : to disable the sonar analysis
  - ```SONAR_GATE_SKIP``` : in case you would like to disable the quality check.
+ - ```SONAR_PULL_REQUEST``` : in case you are performing analysis for some exact pull request.
+ - ```SONAR_BRANCH``` : in case you are performing analysis for some exact branch.
+
+For CircleCI it could look like:
+for branch:
+```
+SONAR_BRANCH="${CIRCLE_BRANCH}" npx sonarqube-verify -- -Dsonar.pullrequest.base=master -Dsonar.branch.name="${CIRCLE_BRANCH}"
+```
+for pull request:
+```
+SONAR_BRANCH="${CIRCLE_BRANCH}" SONAR_PULL_REQUEST="${CIRCLE_PULL_REQUEST##*/}" npx sonarqube-verify -- -Dsonar.pullrequest.base=master -Dsonar.pullrequest.key="${CIRCLE_PULL_REQUEST##*/}" -Dsonar.pullrequest.branch="${CIRCLE_BRANCH}"
+```
 
 
 #### Sample Configuration
